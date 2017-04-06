@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+
+        <style type="text/css">
+            .entrada  .ui-button-text-only .ui-button-text{height: 25px; width: 25px;}
+
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:panelGrid columns="3">
+                <p:panelGrid style="border: none; padding: 0px" >
+                    <p:row>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[1]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[2]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[3]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                    </p:row>
+                    <p:row>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[4]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[5]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[6]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                    </p:row>
+                    <p:row>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[7]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[8]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[9]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                    </p:row>
+                    <p:row>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[10]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[11]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[12]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                    </p:row>
+                    <p:row>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[13]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[14]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                        <p:column style="border: none; padding: 0px">
+                            <p:selectOneButton value="#{letraMB.entradas[15]}" styleClass="entrada">
+                                <f:selectItem  itemValue="1" itemLabel="" />
+                            </p:selectOneButton>
+                        </p:column>
+                    </p:row>
+                    <p:selectOneButton value="#{letraMB.entradas[0]}" class="bias" style="width: 400px !important">
+                        <f:selectItem  itemValue="1" itemLabel="BIAS 1" />
+                        <f:selectItem  itemValue="0" itemLabel="BIAS 0" />
+                    </p:selectOneButton>
+                </p:panelGrid>
+                <h:outputText value="#{letraMB.letra}" style="font-size: 150px"/>
+                <p:column>
+                    <p:outputPanel autoUpdate="true">
+                        #{letraMB.pesos[0]}
+                        <p:panelGrid columns="3">
+                            <p:column>                   
+                                #{letraMB.pesos[1]}
+                            </p:column>
+                            <p:column>    
+                                #{letraMB.pesos[2]}
+                            </p:column>
+                            <p:column>    
+                                #{letraMB.pesos[3]}
+                            </p:column>
+                            <p:column>    
+                                #{letraMB.pesos[4]}
+                            </p:column>
+                            <p:column>    
+                                #{letraMB.pesos[5]}
+                            </p:column>
+                            <p:column>    
+                                #{letraMB.pesos[6]}
+                            </p:column>
+                            <p:column>    
+                                #{letraMB.pesos[7]}
+                            </p:column>
+                            <p:column>   
+                                #{letraMB.pesos[8]}
+                            </p:column>
+                            <p:column>   
+                                #{letraMB.pesos[9]}
+                            </p:column>
+                            <p:column>    
+                                #{letraMB.pesos[10]}
+                            </p:column>
+                            <p:column>   
+                                #{letraMB.pesos[11]}
+                            </p:column>
+                            <p:column>   
+                                #{letraMB.pesos[12]}
+                            </p:column>
+                            <p:column>   
+                                #{letraMB.pesos[13]}
+                            </p:column>
+                            <p:column>   
+                                #{letraMB.pesos[14]}
+                            </p:column>
+                            <p:column>   
+                                #{letraMB.pesos[15]}
+                            </p:column>
+                        </p:panelGrid>
+                    </p:outputPanel>
+                </p:column>
+            </p:panelGrid>
+            <p:commandButton value="Calcular" action="#{letraMB.calcular()}" ajax="false" />
+            <p:messages autoUpdate="true"/>
+
+
+        </h:form>
+
+        <h:form>
+            <p:fieldset legend="Treinamento" >
+                <p:column>
+                    <p:outputLabel value="Número Máximo de Epocas:"/>
+                    <h:inputText value="#{letraMB.epocas}" />
+                </p:column>
+                <p:column>
+                    <p:outputLabel value="Limite:"/>
+                    <h:inputText value="#{letraMB.limite}" />
+                </p:column>
+                <p:separator/>
+                <p:commandButton value="Treinar" action="#{letraMB.treinar()}" ajax="false"/>
+            </p:fieldset>
+
+        </h:form>
+    </h:body>
+</html>
+
